@@ -1,0 +1,95 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+}
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+header nav ul li a:hover {
+    background: #45a049;
+}
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.features, .experience, .benefits, .testimonials, .contact, .faq {
+    padding: 40px 0;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.features h2, .experience h2, .benefits h2, .testimonials h2, .contact h2, .faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+.feature-item, .experience-item, .benefit-item, .faq-item {
+    margin-bottom: 20px;
+}
+.benefit-item ul, .faq-item p {
+    margin-left: 20px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2em;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .container {
+        width: 95%;
+    }
+}

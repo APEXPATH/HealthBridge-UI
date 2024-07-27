@@ -4,184 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>healthBridge - Connecting Patients and Doctors</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav ul li a:hover {
-            background-color: #45a049;
-        }
-        main {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2, h3 {
-            color: #4CAF50;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: url('checkmark.png') left center no-repeat;
-            background-size: 20px;
-            padding-left: 30px;
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin: 5px 0;
-            }
-            main {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>healthBridge</h1>
+        <div class="container">
+            <div class="logo">
+                <h1>healthBridge</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#features-patients">Patients</a></li>
+                    <li><a href="#features-doctors">Doctors</a></li>
+                    <li><a href="#user-experience">Experience</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#features-patients">Features for Patients</a></li>
-                <li><a href="#features-doctors">Features for Doctors</a></li>
-                <li><a href="#user-experience">User Experience</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="introduction">
-            <h2>Welcome to healthBridge</h2>
-            <p>At healthBridge, our mission is to create a seamless connection between patients and healthcare providers. Our platform offers a comprehensive solution that bridges the gap between patients and doctors, making healthcare accessible, convenient, and personalized.</p>
+        <section id="introduction" class="hero">
+            <div class="container">
+                <h2>Welcome to healthBridge</h2>
+                <p>Your bridge to better healthcare. Connecting patients with the best healthcare providers, making healthcare accessible and convenient.</p>
+            </div>
         </section>
 
-        <section id="features-patients">
-            <h2>Features for Patients</h2>
-            <h3>Doctor Search and Booking</h3>
-            <p>Easily find doctors by specialty, location, availability, and more. Our advanced search filters help you narrow down your options to find the best fit for your healthcare needs.</p>
-            <h3>Consultation Options</h3>
-            <p>Choose from in-person visits or telemedicine consultations, providing access to healthcare from the comfort of your home.</p>
-            <h3>Health Records</h3>
-            <p>Keep all your medical records in one place. Our platform ensures that your health data is securely stored and easily accessible whenever you need it.</p>
-            <h3>Notifications and Reminders</h3>
-            <p>Never miss an appointment with our timely reminders sent to your phone or email. Receive notifications for follow-up visits or tests, ensuring continuous and consistent care.</p>
+        <section id="features-patients" class="features">
+            <div class="container">
+                <h2>Features for Patients</h2>
+                <div class="feature-item">
+                    <h3>Doctor Search and Booking</h3>
+                    <p>Find the right doctor easily and book appointments at your convenience.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Consultation Options</h3>
+                    <p>Choose between in-person visits or telemedicine consultations from home.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Health Records</h3>
+                    <p>Securely store and access your medical records anytime, anywhere.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Notifications and Reminders</h3>
+                    <p>Receive timely reminders for appointments and follow-ups.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="features-doctors">
-            <h2>Features for Doctors</h2>
-            <h3>Profile Management</h3>
-            <p>Showcase your qualifications, specialties, and experience. Keep your profile updated to reflect your latest achievements and areas of expertise.</p>
-            <h3>Appointment Management</h3>
-            <p>Set your availability and manage your schedule with ease. Our platform allows you to accept or decline appointments, reschedule, and block off times as needed.</p>
-            <h3>Patient Interaction</h3>
-            <p>Communicate with patients securely through our platform. Offer telemedicine services through high-quality, secure video calls.</p>
-            <h3>Analytics and Reports</h3>
-            <p>Access detailed analytics on your practice, including patient demographics, appointment trends, and feedback.</p>
+        <section id="features-doctors" class="features">
+            <div class="container">
+                <h2>Features for Doctors</h2>
+                <div class="feature-item">
+                    <h3>Profile Management</h3>
+                    <p>Create and update your profile, showcasing your expertise and services.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Appointment Management</h3>
+                    <p>Manage your schedule, accept or reschedule appointments with ease.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Patient Interaction</h3>
+                    <p>Communicate securely with patients through messages or video calls.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Analytics and Reports</h3>
+                    <p>Gain insights into your practice and patient satisfaction through detailed analytics.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="user-experience">
-            <h2>User Experience</h2>
-            <h3>Easy Registration</h3>
-            <p>Register as a patient or doctor in minutes with our simple and intuitive registration process.</p>
-            <h3>Intuitive Interface</h3>
-            <p>Navigate our platform with ease. Whether you're scheduling an appointment or updating your profile, our clean and intuitive design ensures a smooth experience.</p>
-            <h3>Security and Privacy</h3>
-            <p>We prioritize your privacy. All personal and medical information is encrypted and stored securely, in compliance with healthcare regulations.</p>
+        <section id="user-experience" class="experience">
+            <div class="container">
+                <h2>User Experience</h2>
+                <div class="experience-item">
+                    <h3>Easy Registration</h3>
+                    <p>Simple and quick registration process for both patients and doctors.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Intuitive Interface</h3>
+                    <p>Navigate our platform easily with a clean and user-friendly design.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Security and Privacy</h3>
+                    <p>Your data is protected with advanced encryption and compliance with healthcare regulations.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="benefits">
-            <h2>Benefits</h2>
-            <h3>For Patients</h3>
-            <ul>
-                <li>Convenient Access</li>
-                <li>Wide Range of Specialists</li>
-                <li>Transparent Pricing</li>
-            </ul>
-            <h3>For Doctors</h3>
-            <ul>
-                <li>Increased Visibility</li>
-                <li>Efficient Practice Management</li>
-                <li>Enhanced Patient Reach</li>
-            </ul>
+        <section id="benefits" class="benefits">
+            <div class="container">
+                <h2>Benefits</h2>
+                <div class="benefit-item">
+                    <h3>For Patients</h3>
+                    <ul>
+                        <li>Convenient Access</li>
+                        <li>Wide Range of Specialists</li>
+                        <li>Transparent Pricing</li>
+                    </ul>
+                </div>
+                <div class="benefit-item">
+                    <h3>For Doctors</h3>
+                    <ul>
+                        <li>Increased Visibility</li>
+                        <li>Efficient Practice Management</li>
+                        <li>Enhanced Patient Reach</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <h2>Testimonials and Success Stories</h2>
-            <p>"healthBridge made it so easy to find the right specialist. I booked an appointment within minutes and received excellent care." - Sarah, Patient</p>
-            <p>"As a doctor, healthBridge has transformed how I manage my practice. The platform is user-friendly, and my patients appreciate the seamless experience." - Dr. John, General Practitioner</p>
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <p>"healthBridge made it so easy to find the right specialist. I booked an appointment within minutes and received excellent care." - Sarah, Patient</p>
+                <p>"As a doctor, healthBridge has transformed how I manage my practice. The platform is user-friendly, and my patients appreciate the seamless experience." - Dr. John, General Practitioner</p>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact and Support</h2>
-            <p>Have questions or need assistance? Contact our support team via phone, email, or live chat. We're available 24/7 to assist you.</p>
-            <p>We value your feedback. Share your experiences and suggestions to help us improve our services.</p>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact and Support</h2>
+                <p>If you have any questions or need assistance, please contact our support team via phone, email, or live chat. We are available 24/7 to help you.</p>
+            </div>
         </section>
 
-        <section id="faq">
-            <h2>FAQs</h2>
-            <h3>How do I book an appointment?</h3>
-            <p>Search for doctors by specialty or location, select a doctor, and choose a convenient time slot to book your appointment.</p>
-            <h3>Is my information secure?</h3>
-            <p>Yes, your data is protected with advanced encryption and stored securely in compliance with healthcare regulations.</p>
-            <h3>Can I reschedule or cancel an appointment?</h3>
-            <p>Yes, you can reschedule or cancel appointments through your account dashboard. Please review our cancellation policy for any applicable fees.</p>
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>FAQs</h2>
+                <div class="faq-item">
+                    <h3>How do I book an appointment?</h3>
+                    <p>Search for doctors by specialty or location, select a doctor, and choose a convenient time slot to book your appointment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my information secure?</h3>
+                    <p>Yes, your data is protected with advanced encryption and stored securely in compliance with healthcare regulations.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I reschedule or cancel an appointment?</h3>
+                    <p>Yes, you can reschedule or cancel appointments through your account dashboard. Please review our cancellation policy for any applicable fees.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 healthBridge. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 healthBridge. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
